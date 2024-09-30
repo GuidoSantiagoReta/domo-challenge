@@ -67,7 +67,7 @@
     border-radius: 50%;
     background-color: transparent;
     flex-direction: column;
-    gap: 6px;
+    gap: 12px;
     margin-right: 30px;
     margin-top: 4vh;
 }
@@ -78,6 +78,15 @@
     background-color: rgb(14, 14, 14);
     transition: all 0.3s ease;
 }
+/* Animación del botón de la hamburguesa */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 
 /* Nav active */
 .nav-active {
