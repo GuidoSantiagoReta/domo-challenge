@@ -23,4 +23,5 @@ Podés usar frameworks, agregar animaciones, un spinning, o aplicar al menos un 
 Por favor, antes de entregar:
 Agregá al final un footer tus datos de contacto y un párrafo hablando un poco sobre la entrega que estás haciendo.
 
-__mockup Realizado__
+__Mockup usado para desarrollar el código__
+![domo](https://github.com/user-attachments/assets/ea826e9c-cb3d-4bdd-bb14-b49b2d770e6b)
