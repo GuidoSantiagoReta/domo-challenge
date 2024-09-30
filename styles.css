@@ -82,8 +82,8 @@
 /* Nav active */
 .nav-active {
     display: flex;
-    position: fixed; 
-   
+    position: fixed;
+    overflow: hidden;
 }
 
 /* Animación de fade de los enlaces */
