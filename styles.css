@@ -78,6 +78,7 @@
     background-color: rgb(14, 14, 14);
     transition: all 0.3s ease;
 }
+
 /* Animación del botón de la hamburguesa */
 .toggle .line1 {
     transform: rotate(-45deg) translate(-6px, 6px);
@@ -147,6 +148,7 @@ ul {
     align-items: center;
     font-weight: 600;
 }
+
 .no-scroll {
     overflow: hidden;
 }
@@ -169,7 +171,7 @@ ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+
 }
 
 
@@ -188,13 +190,13 @@ ul {
     box-shadow: 0px 0px 5px 2px rgb(255, 253, 253);
     margin: 0 20px;
     margin-top: 10px;
-    transition: transform 0.3s ease; 
-   
+    transition: transform 0.3s ease;
+
 }
 
 .card1 {
     background-color: #015AFF;
-    
+
 }
 
 .card2 {
@@ -209,19 +211,22 @@ ul {
     background-color: #FF2B03;
 }
 
-.card1:hover{
+.card1:hover {
     transform: scale(1.1);
 }
 
-.card2:hover{
+.card2:hover {
     transform: scale(1.1);
 }
-.card3:hover{
+
+.card3:hover {
     transform: scale(1.1);
 }
-.card4:hover{
+
+.card4:hover {
     transform: scale(1.1);
 }
+
 .cards .card>.contenido-texto-card {
     width: 60%;
 
@@ -394,4 +399,16 @@ footer p {
 
     }
 
+}
+
+@media (max-width: 500px) {
+    .brand-title img {
+        width: 110px;
+
+    }
+
+    .burger {
+        width: 40px;
+        height: 40px;
+    }
 }
