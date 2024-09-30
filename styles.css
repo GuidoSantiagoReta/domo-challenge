@@ -413,25 +413,26 @@ footer p {
         height: 40px;
     }
 }
+
 /* MEDIAQUERIES LANDSCAPE*/
 @media only screen and (max-width: 768px) and (orientation: landscape) {
     .navbar {
-        height: 20vh; 
-        padding: 2vw 3vw; 
+        height: 20vh;
+        padding: 2vw 3vw;
     }
 
     .brand-title img {
-        width: 15vw; 
-        max-width: 150px; 
-        margin-top: 2vh; 
+        width: 15vw;
+        max-width: 150px;
+        margin-top: 2vh;
     }
 
     .burger {
-        width: 6vw; 
+        width: 6vw;
         height: 6vw;
         max-width: 100px;
         max-height: 100px;
     }
 
-   
+
 }
