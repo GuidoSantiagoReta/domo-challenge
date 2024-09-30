@@ -25,3 +25,6 @@ Agregá al final un footer tus datos de contacto y un párrafo hablando un poco 
 
 __Mockup usado para desarrollar el código__
 ![domo](https://github.com/user-attachments/assets/ea826e9c-cb3d-4bdd-bb14-b49b2d770e6b)
+
+__Resultado__: 
+https://domochallengeguidosantiagoreta.netlify.app/
