@@ -136,6 +136,9 @@ ul {
     align-items: center;
     font-weight: 600;
 }
+.no-scroll {
+    overflow: hidden;
+}
 
 /*end nav*/
 
