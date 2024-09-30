@@ -9,7 +9,7 @@ const navSlide = () => {
 
         if (nav.classList.contains('nav-active')) {
             // Si el menú está abierto, agregar la animación de salida
-            nav.classList.remove('animate__fadeInDown'); // Quitar la animación de entrada
+            nav.classList.remove('animate__fadeInDown'); // sacar la animación de entrada
             nav.classList.add('animate__animated', 'animate__fadeOutUp'); // Agregar animación de salida
         } else {
             // Si el menú está cerrado, agregar la animación de entrada y mostrar el menú
