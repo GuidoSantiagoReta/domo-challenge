@@ -13,9 +13,10 @@
     padding: 3vw 5vw;
     position: fixed;
     width: 100%;
-    background: rgba(255, 255, 255, 0);
-    height: 10vh;
+    background: rgba(255, 255, 255, 0.705);
+    height: 17vh;
     z-index: 1000;
+    position: fixed;
 }
 
 .brand-title img {
@@ -69,7 +70,7 @@
     flex-direction: column;
     gap: 12px;
     margin-right: 30px;
-    margin-top: 4vh;
+    margin-top: 3vh;
 }
 
 .burger div {
@@ -167,7 +168,7 @@ ul {
 }
 
 .cards {
-    padding-top: 15vh;
+    padding-top: 17vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
