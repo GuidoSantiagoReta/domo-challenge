@@ -364,7 +364,7 @@ footer p {
 
     /*marcas*/
     .col2 {
-        width: 50%;
+        width: 45%;
         margin: 1vw;
     }
 
@@ -413,7 +413,17 @@ footer p {
         width: 40px;
         height: 40px;
     }
+
+    .col2 {
+        width: 100%; 
+        margin: 1vw;
+    }
+
+    .col2>img {
+        max-width: 60%;
+    }
 }
+
 
 /* MEDIAQUERIES LANDSCAPE*/
 @media only screen and (max-width: 768px) and (orientation: landscape) {
