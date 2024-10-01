@@ -4,27 +4,24 @@ const navSlide = () => {
     const body = document.querySelector('body');
 
     burger.addEventListener('click', () => {
-        // Toggle burger animation
+        // Toggle la clase 'nav-active' para abrir/cerrar el menú
+        nav.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
-
+        
+        // Controlar el scroll cuando el menú está abierto
         if (nav.classList.contains('nav-active')) {
-            // Si el menú está abierto, agregar la animación de salida
-            nav.classList.remove('animate__fadeInDown'); // sacar la animación de entrada
-            nav.classList.add('animate__animated', 'animate__fadeOutUp'); // Agregar animación de salida
+            body.classList.add('no-scroll');
         } else {
-            // Si el menú está cerrado, agregar la animación de entrada y mostrar el menú
-            nav.classList.add('nav-active', 'animate__animated', 'animate__fadeInDown');
+            body.classList.remove('no-scroll');
         }
-
-        // Toggle scroll blocking
-        body.classList.toggle('no-scroll');
     });
 
-    // Escuchar el evento de finalización de la animación
-    nav.addEventListener('animationend', () => {
-        // Si la animación de salida termina, sacar la clase nav-active
-        if (nav.classList.contains('animate__fadeOutUp')) {
-            nav.classList.remove('nav-active', 'animate__fadeOutUp');
+    // Controlar visibilidad del menú según el estado de la clase nav-active
+    nav.addEventListener('transitionend', () => {
+        if (!nav.classList.contains('nav-active')) {
+            nav.style.display = 'none';
+        } else {
+            nav.style.display = 'block';
         }
     });
 }

@@ -80,21 +80,30 @@
     transition: all 0.3s ease;
 }
 
-/* Animación del botón de la hamburguesa */
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
 
 /* Nav active */
 .nav-active {
     display: flex;
     position: fixed;
     overflow: hidden;
+}
+
+
+/* Animación del botón de la hamburguesa */
+.toggle {
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 1
+}
+
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+
+.toggle .line2 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* Animación de fade de los enlaces */
@@ -119,26 +128,6 @@
 .navbar-links ul li a:hover {
     color: #ff4b04;
 
-}
-
-/* Animación del botón de la hamburguesa */
-.toggle {
-    border: 2px solid black;
-    border-radius: 50%;
-    z-index: 1
-}
-
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 ul {
@@ -212,18 +201,9 @@ ul {
     background-color: #FF2B03;
 }
 
-.card1:hover {
-    transform: scale(1.1);
-}
-
-.card2:hover {
-    transform: scale(1.1);
-}
-
-.card3:hover {
-    transform: scale(1.1);
-}
-
+.card1:hover,
+.card2:hover,
+.card3:hover,
 .card4:hover {
     transform: scale(1.1);
 }
@@ -258,8 +238,8 @@ ul {
     flex-direction: column;
     align-items: center;
     padding: 5vh 0;
-   
-    
+
+
 }
 
 .container-col {
@@ -270,9 +250,9 @@ ul {
     width: 100%;
     gap: 20px;
     padding-top: 5vh;
-    
-    
-    
+
+
+
 }
 
 .col2 {
@@ -285,14 +265,15 @@ ul {
     transition: transform 0.3s ease;
 }
 
-.col2:hover{
+.col2:hover {
     transform: scale(1.1);
 }
+
 .col2>img {
     width: 100%;
     height: auto;
     max-width: 230px;
-   
+
 }
 
 /* Título */
@@ -414,6 +395,7 @@ footer p {
 }
 
 @media (max-width: 500px) {
+
     /*nav*/
     .brand-title img {
         width: 110px;
@@ -425,16 +407,17 @@ footer p {
         height: 40px;
     }
 
-    
-  /*marcas*/
-  .cat-title2 {
 
-    font-size: 22px;
-    padding: 0 20px; 
+    /*marcas*/
+    .cat-title2 {
 
-}
+        font-size: 22px;
+        padding: 0 20px;
+
+    }
+
     .col2 {
-        width: 100%; 
+        width: 100%;
         margin: 1vw;
     }
 
